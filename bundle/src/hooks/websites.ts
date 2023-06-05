@@ -7,11 +7,9 @@ type NewsInput = {
 };
 
 export default defineHook((fn, context) => {
-  const { filter, action } = fn;
-  const { services } = context;
-  const { ItemsService } = services;
+  const { filter } = fn;
 
-  filter('news.items.create', async (_input, { collection }, { database }) => {
+  filter('web_news.items.create', async (_input, { collection }, { database }) => {
     const input: NewsInput = _input as NewsInput;
     input.slug = await generateSlugByCollection({ database, collection, text: input.slug ?? input.title });
     return input;

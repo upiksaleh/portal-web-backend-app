@@ -6,6 +6,7 @@ import HeaderTool from '@editorjs/header';
 import CodeTool from '@editorjs/code';
 import InlineCodeTool from '@editorjs/inline-code';
 import MarkerTool from '@editorjs/marker';
+import EmbedTool from '@editorjs/embed';
 import QuoteTool from '@editorjs/quote';
 import DelimiterTool from '@editorjs/delimiter';
 import TableTool from '@editorjs/table';
@@ -86,6 +87,10 @@ export default function getTools(uploaderConfig: UploaderConfig): Record<string,
     },
     fromhtml: {
       class: FromHtmlTool,
+    },
+    embed: {
+      class: EmbedTool,
+      inlineToolbar: true,
     },
   };
   return tools;

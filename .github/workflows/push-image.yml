@@ -1,4 +1,4 @@
-name: portal-backend-push-image
+name: push-image
 on:
   push:
     paths:

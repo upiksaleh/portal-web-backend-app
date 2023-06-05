@@ -1,10 +1,13 @@
 {
   "name": "@portal-web/backend-app",
   "private": true,
-  "version": "1.0.0",
+  "version": "10.0.0",
   "description": "Portal Web Backend",
   "scripts": {
-    "start": "directus bootstrap && directus start"
+    "start": "directus bootstrap && directus start",
+    "start-prod": "CONFIG_PATH=\".env.prod\" directus bootstrap && CONFIG_PATH=\".env.prod\" directus start",
+    "apply-snapshot": "CONFIG_PATH=\".env.prod\" directus schema apply snapshot.yml",
+    "snapshot-prod": "CONFIG_PATH=\".env.prod\" directus schema snapshot snapshot.yml"
   },
   "keywords": [],
   "author": "Upik Saleh <upxsal@gmail.com>",

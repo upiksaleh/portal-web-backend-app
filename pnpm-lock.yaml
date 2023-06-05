@@ -47,7 +47,7 @@ importers:
         specifier: workspace:*
         version: link:../bundle
       directus:
-        specifier: ^10.0.0
+        specifier: 10.0.0
         version: 10.0.0(typescript@5.0.4)
       keyv-memcache:
         specifier: 1.3.3

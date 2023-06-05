@@ -7,8 +7,8 @@ init-app:
 
 pack-app: init-app
 	pnpm install
-	pnpm --filter app build
-	node scripts/app-pack.js $(c)
+	pnpm --filter @portal-web/* build
+	node scripts/app-pack.js
 
 start-app: init-app
 	pnpm run -C ./app start
@@ -17,7 +17,7 @@ build-image: pack-app
 	docker build \
 		--cache-from upiksaleh/portal-web-backend-app:$(version) \
 		-t upiksaleh/portal-web-backend-app:$(version) \
-		./apps/$(c)
+		./app/
 	docker tag upiksaleh/portal-web-backend-app:$(version) upiksaleh/portal-web-backend-app:latest
 
 push-image: build-image

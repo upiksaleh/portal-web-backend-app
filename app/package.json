@@ -1,7 +1,7 @@
 {
   "name": "@portal-web/backend-app",
   "private": true,
-  "version": "10.0.0",
+  "version": "10.3.0",
   "description": "Portal Web Backend",
   "scripts": {
     "start": "directus bootstrap && directus start",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@portal-web/directus-extension-portal-web-backend-bundle": "workspace:*",
     "@keyv/redis": "2.5.5",
-    "directus": "10.0.0",
+    "directus": "10.3.0",
     "keyv-memcache": "1.3.3",
     "memcached": "2.2.2",
     "nodemailer-mailgun-transport": "2.1.5",

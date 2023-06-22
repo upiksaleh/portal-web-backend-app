@@ -234,8 +234,45 @@ function getSanitizedValue(value: any): EditorJS.OutputData | null {
   margin: 0 auto;
   object-fit: contain;
 }
+
+/** STYLE */
+
+.codex-editor .ce-block h1 {
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.codex-editor .ce-block h2 {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 38px;
+}
+
+.codex-editor .ce-block h3 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.codex-editor .ce-block h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.codex-editor .ce-block h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.codex-editor .ce-block h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
 </style>
-<style src="./styles.css"></style>
 
 <!--<style src="./editorjs-ui.css"></style>-->
 <!--<style src="./editorjs-components.css"></style>-->
